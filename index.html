@@ -9,7 +9,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
+<style>
 
+.active-cyan-4 input[type=text]:focus:not([readonly]) {
+  border: 1px solid ##5EE230;
+  box-shadow: 0 0 0 1px ##5EE230;
+}
+.active-cyan-3 input[type=text] {
+  border: 1px solid ##5EE230;
+  box-shadow: 0 0 0 1px ##5EE230;
+}
+
+</style>
 
 <body>
 
@@ -17,7 +28,7 @@
     <div class="jumbotron text-center">
       <h1>Spotify Song Recommender</h1>
       <p>Welcome to my simple Spotify song recommender. Simply enter the title of one of your favorite song’s and my algorithm will generate a song recommendation for you, which you can go and check out on https://www.spotify.com/us/ .</p>
-        <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+        <<div class="active-cyan-3 active-cyan-4 mb-4"> 
             <input class="form-control" id='search_query' type="text"
                    placeholder="Enter one of your favorite songs here" aria-label="Search">
             <p></p>
