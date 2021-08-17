@@ -55,6 +55,7 @@ def fave_song_release_date(current_fave_song, songs_1995):
     return date
 
 def return_song_suggestion(current_fave_song):
+    songs_1995 = pd.read_csv('songs_1995_kmeans.csv')
     # find the cluster of the person's favorite song and then filter song dataframe to only have songs with that cluster
     cluster_num = fave_song_cluster(current_fave_song, songs_1995)
     same_cluster_songs = songs_1995[songs_1995['kmeans_cluster']==cluster_num]
