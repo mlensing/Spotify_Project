@@ -36,7 +36,7 @@ jsonschema==3.2.0
 kiwisolver==1.2.0
 # LDB-LAPACK==0.1
 littleutils==0.2.2
-MarkupSafe==1.1.1
+# MarkupSafe==1.1.1
 # matplotlib==3.3.2
 mistune==0.8.4
 nbclient==0.5.1
@@ -56,7 +56,7 @@ patsy==0.5.1
 pexpect==4.8.0
 pickleshare==0.7.5
 Pillow==8.0.0
-pingouin==0.3.8
+# pingouin==0.3.8
 # plotly==5.0.0
 # plotly-geo==1.0.0
 prometheus-client==0.8.0
@@ -71,7 +71,7 @@ python-dateutil==2.8.1
 pytz==2020.1
 pyzmq==19.0.2
 # requests==2.24.0
-scikit-learn==0.23.2
+# scikit-learn==0.23.2
 # scipy==1.5.3
 # seaborn==0.11.0
 Send2Trash==1.5.0
