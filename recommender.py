@@ -12,7 +12,7 @@ from sklearn.decomposition import PCA
 
 def create_songs_1995():
 
-    songs_1995 = pd.read_csv('/Users/michellelensing/Documents/MSBA/Spotify Project/songs_1995.csv')
+    songs_1995 = pd.read_csv('songs_1995.csv')
     songs_1995 = songs_1995.drop(['Unnamed: 0'], axis=1)
 
     songs_1995['release_date'] = pd.to_datetime(songs_1995['release_date'])
