@@ -37,7 +37,7 @@ def search_query(query=None):
         results = return_song_suggestion(query)
         print('test2')
         print('test3')
-        results = {"song": "My song"}
+        # results = {"song": "My song"}
         data = json.dumps(results, ensure_ascii=False, indent=4)
         print("returning data")
 
