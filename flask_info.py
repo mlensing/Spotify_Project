@@ -5,7 +5,7 @@ from flask_cors import CORS
 import pandas as pd
 import json
 
-# from recommender import return_song_suggestion
+from recommender import return_song_suggestion
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
@@ -34,7 +34,7 @@ def search_query(query=None):
     
     try:
         print('ttest1')
-        # results = return_song_suggestion(query)
+        results = return_song_suggestion(query)
         print('test2')
         print('test3')
         results = {"song": "My song"}
