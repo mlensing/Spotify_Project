@@ -74,5 +74,5 @@ def return_song_suggestion(current_fave_song):
     # print song name and artist(s) to the user
     print(f'Song: {song_name}')
     print(f'Artist(s): {song_artists}')
-    return {'Song' : song_name, 'Artist': song_artists}
+    return {'Song' : song_name, 'Artist': song_artists[0]}
 
