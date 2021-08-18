@@ -44,7 +44,7 @@ import ast
 
 def fave_song_cluster(current_fave_song, songs_1995):
     # takes in one of the user's favorite songs
-   fave_song = songs_1995[songs_1995['name']==current_fave_song]
+   fave_song = songs_1995[songs_1995['lower_name']==current_fave_song]
    # gets the cluster number of that song and returns it
    fave_song_cluster_number = fave_song.reset_index().kmeans_cluster[0]
    return fave_song_cluster_number
@@ -52,7 +52,7 @@ def fave_song_cluster(current_fave_song, songs_1995):
 def fave_song_release_date(current_fave_song, songs_1995):
     songs_1995['release_date'] = pd.to_datetime(songs_1995['release_date'])
     # finds the release date of the user's favorite song
-    date = songs_1995[songs_1995['name']== current_fave_song][['release_date']].reset_index().release_date[0]
+    date = songs_1995[songs_1995['lower_name']== current_fave_song][['release_date']].reset_index().release_date[0]
     return date
 
 def return_song_suggestion(current_fave_song):
