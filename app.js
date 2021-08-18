@@ -16,10 +16,10 @@ function handleClickSearch() {
           .then(function (data) {
 
                 songData = data;
-                buildTable(songData);
-                var num_query_results = songData.length;
+                console.log(songData)
+         
 
-                document.getElementById("search_num").innerHTML = "Your new song recommendation is " + songData;
+                document.getElementById("search_num").innerHTML = "Your new song recommendation is " + songData['Song'] + "by" + songData['Artist'];
           })
 
           .catch(function (err) {
