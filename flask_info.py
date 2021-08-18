@@ -34,6 +34,7 @@ def search_query(query=None):
     
     try:
         print('ttest1')
+        query = str(query).lower()
         results = return_song_suggestion(query)
         print('test2')
         print('test3')
