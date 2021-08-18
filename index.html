@@ -20,10 +20,6 @@
   box-shadow: 0 0 0 1px ##5EE230;
 }
 
-  h1 { font-family:Montserrat, Arial, sans-serif; }
-  p1 { font-family: Gotham, Arial, sans-serif; } 
-  p2 { font-family: Gotham, Arial, sans-serif; font-size:6px;}
-  p3 { font-family: Montserrat, Arial, sans-serif; } 
 </style>
 
 <body style="background-image: linear-gradient(black, white);"> 
@@ -31,18 +27,18 @@
   <div class="container-fluid" style="background-color:black;">
     <div class="jumbotron text-center" style="background-color:black;">
       <h1 style="color:green;">Spotify Song Recommender</h1> 
-      <p1 style="color:white;">Welcome to my simple Spotify song recommender. Enter the title of one of your favorite songs and my algorithm will generate a song recommendation for you, which you can then go and check out on <a href="https://www.spotify.com/us/">Spotify</a>.</p1>
+      <p style="color:white;">Welcome to my simple Spotify song recommender. Enter the title of one of your favorite songs and my algorithm will generate a song recommendation for you, which you can then go and check out on <a href="https://www.spotify.com/us/">Spotify</a>.</p>
         
-      <p2 style="color:white;">Note: the database only includes songs released after 1995.</p2>
+      <p style="color:white;">Note: the database only includes songs released after 1995.</p>
       
-      <p3 style="color:white;">Try something like 'You Belong With Me' or 'The A Team'.</p3>
+      <p style="color:white;">Try something like 'You Belong With Me' or 'The A Team'.</p>
       <div class="active-cyan-3 active-cyan-4 mb-4"> 
             <input class="form-control" id='search_query' type="text"
                    placeholder="Enter one of your favorite songs here" aria-label="Search">
-            <p4></p4>
+            <p></p>
             <button class="btn btn-success btn-lg" id="search-btn" type="button" >Generate Recommendation!</button>
-            <p5></p5>
-            <p6 style="color:white;" id="search_num"></p6>
+            <p></p>
+            <p style="color:white;" id="search_num"></p>
        
         </div>
     </div>
