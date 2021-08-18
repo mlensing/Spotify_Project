@@ -28,3 +28,5 @@ function handleClickSearch() {
           });
     }
 }
+// Attach function to button click
+d3. select("#search-btn").on("click", handleClickSearch);
