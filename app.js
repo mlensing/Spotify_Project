@@ -18,8 +18,14 @@ function handleClickSearch() {
                 songData = data;
                 console.log(songData)
          
+                if (songData==undefined){
+                  document.getElementById("search_num").innerHTML = "Your song is invalid. Please try again.";
+                }
+                else{
+                  document.getElementById("search_num").innerHTML = "Your new song recommendation is " + songData['Song'] + " by " + songData['Artist'] + "!";
+                }
 
-                document.getElementById("search_num").innerHTML = "Your new song recommendation is " + songData['Song'] + " by " + songData['Artist'] + "!";
+                
           })
 
           .catch(function (err) {
