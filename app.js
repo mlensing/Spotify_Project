@@ -19,7 +19,7 @@ function handleClickSearch() {
                 console.log(songData)
          
 
-                document.getElementById("search_num").innerHTML = "Your new song recommendation is " + songData['Song'] + " by " + songData['Artist'];
+                document.getElementById("search_num").innerHTML = "Your new song recommendation is " + songData['Song'] + " by " + songData['Artist'] + "!";
           })
 
           .catch(function (err) {
