@@ -8,6 +8,7 @@ import numpy as np
 # from sklearn import metrics
 import random
 from datetime import timedelta
+import ast
 # from sklearn.decomposition import PCA
 
 # def create_songs_1995():
@@ -71,8 +72,9 @@ def return_song_suggestion(current_fave_song):
     random_song_selection = random.randint(0,(length_of_song_list-1))
     song_name = filtered_same_cluster_songs.name[random_song_selection]
     song_artists = filtered_same_cluster_songs.artists[random_song_selection]
+    first_song_artist = ast.literal_eval(song_artists)[0]
     # print song name and artist(s) to the user
     print(f'Song: {song_name}')
     print(f'Artist(s): {song_artists}')
-    return {'Song' : song_name, 'Artist': song_artists[0]}
+    return {'Song' : song_name, 'Artist': first_song_artist}
 
