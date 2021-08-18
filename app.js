@@ -1,7 +1,6 @@
 function handleClickSearch() {
 
     const query = d3.select('#search_query').property("value");
-    print(query);
 
     if (query) {
         console.log(query);
