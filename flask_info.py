@@ -30,15 +30,10 @@ def welcome():
 @app.route("/api/search/<query>")
 def search_query(query=None):
 
-    print('it is working')
     
     try:
-        print('ttest1')
         query = str(query).lower()
         results = return_song_suggestion(query)
-        print('test2')
-        print('test3')
-        # results = {"song": "My song"}
         data = json.dumps(results, ensure_ascii=False, indent=4)
         print("returning data")
 
