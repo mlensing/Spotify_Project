@@ -8,7 +8,7 @@ function handleClickSearch() {
 
         var url = "https://spotify-heroku-api.herokuapp.com/api/search/"; 
         var updated_url = url + query;
-
+        document.getElementById("search_num").innerHTML = "Loading...";
         fetch(updated_url)
           .then(function (response) {
             return response.json();
@@ -29,6 +29,7 @@ function handleClickSearch() {
           })
 
           .catch(function (err) {
+            document.getElementById("search_num").innerHTML = "";
             console.log(err);
           });
     }
